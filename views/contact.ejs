@@ -1,26 +1,20 @@
 <%- include('header') %>
-
-<%if(msg){%>
-    <p><%=msg%></p>
-<%}%>
-<form method="POST" action="send">
+<form method="POST" action="contact/send">
     <p>
-        <label>First Name</label>
-        <input type="text" name="fname" id="fname">
+        <label>From:</label>
+        <input type="text" name="from" id="from">
     </p>
     <p>
-        <label>Last Name</label>
-        <input type="text" name="lname" id="lname">
+        <label>To:</label>
+        <input type="text" name="to" id="to">
     </p>
     <p>
-        <label>Email</label>
-        <input type="text" name="email" id="email">
+        <label>Choose a holiday:</label>
+        <input type="radio" name="holiday" value="Christmas"> Christmas<br>
+        <input type="radio" name="holiday" value="Halloween"> Halloween<br>
+        <input type="radio" name="holiday" value="Valentines day"> Valentines Day
     </p>
-    <p>
-        <label>Message</label>
-        <input type="text" name="message" id="message">
-    </p>
-    <button type="submit">Submit</button>
+    <input type="submit" name="send">
 </form>
     
 <%- include('footer') %>
