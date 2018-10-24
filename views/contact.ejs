@@ -1,0 +1,27 @@
+<%- include('header') %>
+
+<%if(msg){%>
+    <p><%=msg%></p>
+<%}%>
+<form method="POST" action="send">
+    <p>
+        <label>First Name</label>
+        <input type="text" name="fname" id="fname">
+    </p>
+    <p>
+        <label>Last Name</label>
+        <input type="text" name="lname" id="lname">
+    </p>
+    <p>
+        <label>Email</label>
+        <input type="text" name="email" id="email">
+    </p>
+    <p>
+        <label>Message</label>
+        <input type="text" name="message" id="message">
+    </p>
+    <button type="submit">Submit</button>
+</form>
+    
+<%- include('footer') %>
+
