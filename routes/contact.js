@@ -38,7 +38,7 @@ router.post('/send', function(req, res, next) {
 
       });
 
-      res.render('preview', {from: req.body.from, to: req.body.to, holiday: req.body.holiday, email:req.body.email});
+      res.render('preview', {title:'Email Preview',from: req.body.from, to: req.body.to, holiday: req.body.holiday, email:req.body.email});
 
 });
 

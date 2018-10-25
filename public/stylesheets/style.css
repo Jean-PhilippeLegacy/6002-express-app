@@ -1,8 +1,120 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 1200px;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  grid-column-gap: 30px;
+  padding: 0 15px 0 15px;
+}
+
+header{
+  height: 100px;
+  margin-bottom:50px;
+  background-color:red;
+  border-radius: 30px;
+  padding:10px !important;
+}
+
+#logo{
+  grid-column:span 1;
+  max-width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+nav{
+  display: contents;
+}
+
+ul{
+  grid-column: 2/-1;
+  margin: 0 auto;
+}
+
+.links {
+  display: inline;
+  line-height: 100px;
+}
+
+.links a{
+  text-decoration: none;
+  margin: 0 15px 0 15px;
+  font-size: 20pt;
+}
+
+.links a:hover {
+  color:white;
+}
+
+h2 {
+  font-size: 15pt;
+}
+
+.team-img {
+  height: 100px;
+  width:100px;
+  border-radius: 100%;
+  grid-column: span 1;
+  margin: 0 auto;
+}
+
+.team-img p{
+  font-size: 15pt;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  background: rgba(255,255,255,0.8);
+}
+
+#team1{
+  background-image: url('../images/pers1.jpg');
+  background-size: cover;
+}
+
+#team2{
+  background-image: url('../images/pers2.jpg');
+  background-size: cover;
+}
+
+#team3{
+  background-image: url('../images/pers3.jpg');
+  background-size: cover;
+}
+
+#team4{
+  background-image: url('../images/pers4.jpg');
+  background-size: cover;
+}
+
+footer{
+  height: 75px;
+  margin-top:50px;
+  background-color:red;
+  border-radius: 30px;
+  padding:10px !important;
+  text-align: center;
+  line-height: 75px;
+}
+
+#form-group{
+  grid-column: span 1;
+}
+
+#holiday-group{
+  grid-column: span 1;
+}
+
+#submit {
+  grid-column: span 2;
+  background-color: green;
+  width: 100px;
+  height: 75px;
+  margin: auto auto;
 }

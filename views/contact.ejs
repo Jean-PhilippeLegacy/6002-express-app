@@ -1,20 +1,26 @@
 <%- include('header') %>
-<form method="POST" action="contact/send">
-    <p>
-        <label>From:</label>
-        <input type="text" name="from" id="from">
-    </p>
-    <p>
-        <label>To:</label>
-        <input type="text" name="to" id="to">
-    </p>
-    <p>
-        <label>Choose a holiday:</label>
+<form class="wrapper" method="POST" action="contact/send">
+    <div id="form-group">
+        <p>
+            <label>From:</label><br>
+            <input required type="text" name="from" id="from">
+        </p>
+        <p>
+            <label>To:</label><br>
+            <input required type="text" name="to" id="to">
+        </p>
+        <p>
+            <label>Receiver's email:</label><br>
+            <input required type="email" name="email" id="email">
+        </p>
+    </div>
+    <p id="holiday-group">
+        <label>Choose a holiday:</label><br>
         <input type="radio" name="holiday" value="Christmas"> Christmas<br>
         <input type="radio" name="holiday" value="Halloween"> Halloween<br>
         <input type="radio" name="holiday" value="Valentines day"> Valentines Day
     </p>
-    <input type="submit" name="send">
+    <input id="submit" type="submit" name="send">
 </form>
     
 <%- include('footer') %>
